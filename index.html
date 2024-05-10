@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    < <link rel="stylesheet" href="cajero.css"> 
+    <title>Document</title>
+</head>
+<body class="cajero">
+      <!-- <div>
+        <label for="nip">NIP:</label>
+        <input type="number" name="nip" id="nip" placeholder="Escribe tu NIP">
+    </div>
+    <button id="btn_nip" onclick="login(pin);">
+        Iniciar sesión
+    </button> --> 
+ <main class="menu">
+     <h1>Cajero Automático</h1>
+     <p id="alerta">NIP</p>
+     <div id="alerta"></div>
+     <div id="submenu">
+        <button onclick="consultarSaldo(pin)">Consultar Saldo</button>
+        <br>
+        <p id="saldo">SALDO</p>
+    </div>   
+     <br>  
+        <div id="saldo"></div>  
+    
+    <label for="retiro" type="number">Cantidad a RETIRAR:</label>
+    <input type="number" name="retiro" id="retiro">
+    <button onclick="retirar(retiro)">Retirar</button>
+<br>
+    <label for="deposito" type="number">Cantidad a DEPOSITAR:</label>
+    <input type="number" name="deposito" id="deposito">
+    <button onclick="depositar(deposito)">Depositar</button>
+<br>
+    <button onclick="fin()">SALIR</button>
+      
+</main>
+ 
+    <script src="cajero.js"></script>
+</body>
+</html>
